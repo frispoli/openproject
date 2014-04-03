@@ -153,6 +153,8 @@ group :test do
   gem "json_spec"
   gem "activerecord-tableless", "~> 1.0"
   gem "codeclimate-test-reporter", :require => nil
+  gem "sqlite3"
+  #gem "activerecord-jdbcsqlite3-adapter"
 end
 
 group :ldap do
@@ -195,9 +197,6 @@ platforms :mri, :mingw do
     gem 'pg', "~> 0.17.1"
   end
 
-  group :sqlite do
-    gem "sqlite3"
-  end
 end
 
 platforms :jruby do
@@ -211,9 +210,6 @@ platforms :jruby do
     gem "activerecord-jdbcpostgresql-adapter"
   end
 
-  group :sqlite do
-    gem "activerecord-jdbcsqlite3-adapter"
-  end
 end
 
 # Load Gemfile.local, Gemfile.plugins and plugins' Gemfiles
