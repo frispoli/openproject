@@ -103,6 +103,7 @@ group :production do
   # see https://github.com/mperham/dalli
   gem 'dalli'
   gem 'unicorn'
+  gem "rack-timeout"
 end
 
 group :assets do
