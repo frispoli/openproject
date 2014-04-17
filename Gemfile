@@ -102,6 +102,7 @@ group :production do
   # requires memcached 1.4+
   # see https://github.com/mperham/dalli
   gem 'dalli'
+  gem 'unicorn'
 end
 
 group :assets do
