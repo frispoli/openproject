@@ -16,8 +16,8 @@ GIT
 
 GIT
   remote: https://github.com/opf/openproject-plugins.git
-  revision: ba6555c9c92bbb882556084f4828693f4e25654a
-  branch: dev
+  revision: 172b70fb77de32a80a39f30e52a87483b20951a6
+  branch: stable
   specs:
     openproject-plugins (1.0.8)
       rails (~> 3.2.9)
