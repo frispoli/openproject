@@ -103,8 +103,10 @@ group :production do
   # see https://github.com/mperham/dalli
   gem 'dalli'
   gem 'unicorn'
-  gem "rack-timeout"
 end
+
+# needed by heroku
+gem "rack-timeout"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

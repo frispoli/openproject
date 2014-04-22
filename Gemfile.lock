@@ -15,6 +15,26 @@ GIT
       i18n
 
 GIT
+  remote: https://github.com/opf/openproject-plugins.git
+  revision: ba6555c9c92bbb882556084f4828693f4e25654a
+  branch: dev
+  specs:
+    openproject-plugins (1.0.8)
+      rails (~> 3.2.9)
+
+GIT
+  remote: https://github.com/opf/openproject-translations.git
+  revision: c667c69200db9685ebc49969e0a45046971d094f
+  branch: stable
+  specs:
+    openproject-translations (3.0.0)
+      httmultiparty
+      openproject-plugins (~> 1.0.6)
+      rails (~> 3.2.14)
+      rest-client
+      rubyzip
+
+GIT
   remote: https://github.com/rails/prototype_legacy_helper.git
   revision: a2cd95c3e3c1a4f7a9566efdab5ce59c886cb05f
   specs:
@@ -158,6 +178,13 @@ GEM
       test-unit (~> 2.2)
     hike (1.2.3)
     htmldiff (0.0.1)
+    httmultiparty (0.3.14)
+      httparty (>= 0.7.3)
+      mimemagic
+      multipart-post
+    httparty (0.13.1)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.6.9)
     interception (0.5)
     journey (1.0.4)
@@ -188,9 +215,12 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.2)
     mime-types (1.25.1)
+    mimemagic (0.2.1)
     mini_portile (0.5.3)
     multi_json (1.9.2)
     multi_test (0.1.1)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
     mysql2 (0.3.15)
     net-ldap (0.2.2)
     nio4r (1.0.0)
@@ -266,6 +296,8 @@ GEM
       json (~> 1.4)
     ref (1.0.5)
     request_store (1.0.5)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -400,6 +432,8 @@ DEPENDENCIES
   net-ldap (~> 0.2.2)
   object-daddy (~> 1.1.0)
   oj
+  openproject-plugins!
+  openproject-translations!
   pg (~> 0.17.1)
   prototype-rails
   prototype_legacy_helper (= 0.0.0)!
